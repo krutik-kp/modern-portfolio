@@ -8,7 +8,6 @@ import {
   Award,
   Sparkles,
   TrendingUp,
-  Users,
   Rocket,
   Target,
 } from "lucide-react";

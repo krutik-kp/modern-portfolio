@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Sparkles, MessageCircle, Zap, Globe, Heart } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Sparkles, MessageCircle, Zap } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -70,32 +70,6 @@ const Contact: React.FC = () => {
     }
   ];
 
-  const socialLinks = [
-    {
-      name: 'GitHub',
-      icon: Github,
-      href: 'https://github.com/krutikpatel',
-      color: 'hover:text-gray-300',
-      bgColor: 'bg-bg-card',
-      description: 'Check out my code'
-    },
-    {
-      name: 'LinkedIn',
-      icon: Linkedin,
-      href: 'https://linkedin.com/in/krutikpatel',
-      color: 'hover:text-accent-blue',
-      bgColor: 'bg-bg-card',
-      description: 'Connect professionally'
-    },
-    {
-      name: 'Twitter',
-      icon: Twitter,
-      href: 'https://twitter.com/krutikpatel',
-      color: 'hover:text-accent-blue',
-      bgColor: 'bg-bg-card',
-      description: 'Follow my journey'
-    }
-  ];
 
   // const availabilityStatus = {
   //   status: 'Available for new opportunities',

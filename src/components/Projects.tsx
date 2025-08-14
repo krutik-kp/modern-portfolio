@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Github, Eye, Code, Globe, Database, ExternalLink, Sparkles, Star, TrendingUp, Zap } from 'lucide-react';
+import { Github, Code, Globe, Database, ExternalLink, Sparkles, Star, Zap } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -161,16 +161,16 @@ const Projects: React.FC = () => {
     }
   };
 
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty) {
-      case 'Advanced':
-        return 'text-accent-red';
-      case 'Intermediate':
-        return 'text-accent-yellow';
-      default:
-        return 'text-accent-green';
-    }
-  };
+  // const getDifficultyColor = (difficulty: string) => {
+  //   switch (difficulty) {
+  //     case 'Advanced':
+  //       return 'text-accent-red';
+  //     case 'Intermediate':
+  //       return 'text-accent-yellow';
+  //     default:
+  //       return 'text-accent-green';
+  //   }
+  // };
 
   const getImpactColor = (impact: string) => {
     switch (impact) {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUp, Code, Github, Linkedin, Twitter, Mail, Heart, Sparkles } from 'lucide-react';
+import { ArrowUp, Code, Github, Linkedin, Mail, Heart, Sparkles } from 'lucide-react';
 import { AnimatePresence } from 'framer-motion';
 
 const Footer: React.FC = () => {

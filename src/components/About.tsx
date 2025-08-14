@@ -126,21 +126,21 @@ const About: React.FC = () => {
     { word: 'Detail-Oriented', icon: Award, color: 'text-accent-orange' },
   ];
 
-  const universityHighlights = [
-    {
-      title: 'University of Toronto',
-      subtitle: 'Bachelor of Computer Science',
-      period: '2016 - 2020',
-      gpa: '3.9/4.0',
-      achievements: [
-        'Dean\'s List (4 years consecutively)',
-        'Computer Science Society President (2019-2020)',
-        'Capstone Project: AI Web Assistant (Grade: A+)',
-        'Research Assistant in Machine Learning Lab',
-        'Scholarship recipient for academic excellence'
-      ]
-    }
-  ];
+  // const universityHighlights = [
+  //   {
+  //     title: 'University of Toronto',
+  //     subtitle: 'Bachelor of Computer Science',
+  //     period: '2016 - 2020',
+  //     gpa: '3.9/4.0',
+  //     achievements: [
+  //       'Dean\'s List (4 years consecutively)',
+  //       'Computer Science Society President (2019-2020)',
+  //       'Capstone Project: AI Web Assistant (Grade: A+)',
+  //       'Research Assistant in Machine Learning Lab',
+  //       'Scholarship recipient for academic excellence'
+  //     ]
+  //   }
+  // ];
 
   return (
     <section id="about" className="section-padding bg-bg-secondary relative overflow-hidden">
