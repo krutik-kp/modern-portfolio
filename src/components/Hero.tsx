@@ -91,14 +91,26 @@ const Hero: React.FC = () => {
             transition={{ duration: 1, delay: 1 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
-            <button className="btn-accent group flex items-center space-x-3">
+            <button
+              className="btn-accent group flex items-center space-x-3"
+              onClick={() => {
+                const projectsSection = document.getElementById('projects');
+                if (projectsSection) {
+                  projectsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               <span>View My Work</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
             </button>
-            <button className="btn-secondary group flex items-center space-x-3">
+            <a
+              className="btn-secondary group flex items-center space-x-3"
+              href="/resume.pdf"
+              download
+            >
               <Download className="w-6 h-6" />
               <span>Download Resume</span>
-            </button>
+            </a>
           </motion.div>
 
           {/* Social Links */}
@@ -146,4 +158,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero; 
+export default Hero;
