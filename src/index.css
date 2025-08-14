@@ -90,3 +90,60 @@
     @apply bg-bg-card rounded-xl;
   }
 }
+@media (max-width: 768px) {
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .footer {
+    padding: 1.5rem 0.5rem !important;
+  }
+  .footer .grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .footer .flex-col,
+  .footer .md\:flex-row {
+    flex-direction: column !important;
+    gap: 1rem;
+    text-align: center;
+  }
+  .footer .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+  .footer .space-x-6 {
+    gap: 1rem !important;
+  }
+  .footer .social-links {
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+  }
+  .footer .quick-links {
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+  }
+  .experience-timeline {
+    padding-left: 0 !important;
+  }
+  .experience-timeline .relative {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .experience-timeline .absolute.left-8 {
+    left: 0 !important;
+    width: 0.5rem !important;
+  }
+  .experience-timeline .ml-24 {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .experience-timeline .w-16.h-16 {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    left: -1.25rem !important;
+    top: 0.5rem !important;
+  }
+  .experience-timeline .bg-bg-card {
+    padding: 1rem !important;
+  }
+}

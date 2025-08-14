@@ -210,7 +210,7 @@ const Experience: React.FC = () => {
         </motion.div>
 
         {/* Work Experience Section - Improved Layout */}
-        <div className="mb-20">
+        <div className="mb-20 experience-timeline">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -229,14 +229,14 @@ const Experience: React.FC = () => {
           </motion.div>
 
           {/* Improved Timeline Layout */}
-          <div className="relative max-w-6xl mx-auto">
+          <div className="relative max-w-6xl mx-auto flex flex-col md:block">
             {/* Timeline Line */}
             <motion.div
               initial={{ height: 0 }}
               whileInView={{ height: "100%" }}
               transition={{ duration: 2, delay: 0.5 }}
               viewport={{ once: true }}
-              className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-accent-purple via-accent-blue to-accent-green"
+              className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-accent-purple via-accent-blue to-accent-green hidden md:block"
             ></motion.div>
 
             <div className="space-y-16">
@@ -247,7 +247,7 @@ const Experience: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className="relative flex items-start"
+                  className="relative flex flex-col md:flex-row items-start"
                 >
                   {/* Timeline Dot */}
                   <motion.div
@@ -255,7 +255,8 @@ const Experience: React.FC = () => {
                     whileInView={{ scale: 1 }}
                     transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
                     viewport={{ once: true }}
-                    className="absolute left-0 w-16 h-16 bg-gradient-to-r from-accent-purple to-accent-blue rounded-full flex items-center justify-center shadow-2xl shadow-accent-purple/25 border-4 border-bg-primary z-10"
+                    className="w-16 h-16 bg-gradient-to-r from-accent-purple to-accent-blue rounded-full flex items-center justify-center shadow-2xl shadow-accent-purple/25 border-4 border-bg-primary z-10 mb-4 md:mb-0 md:absolute md:left-0"
+                    style={{ top: '0' }}
                   >
                     <job.icon className="w-8 h-8 text-white" />
                   </motion.div>
@@ -266,7 +267,7 @@ const Experience: React.FC = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: index * 0.2 + 0.4 }}
                     viewport={{ once: true }}
-                    className="ml-24 flex-1"
+                    className="md:ml-24 flex-1"
                   >
                     <div className="bg-bg-card rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 border border-white/10 hover:border-accent-purple/30 group">
                       {/* Job Header */}
