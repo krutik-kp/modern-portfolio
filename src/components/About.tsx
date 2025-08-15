@@ -252,7 +252,7 @@ const About: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  My journey began at the University of Toronto, where I discovered my passion for creating innovative digital solutions. 
+                  My journey began at the Birla Vishwakarma Mahavidhyalaya, where I discovered my passion for creating innovative digital solutions. 
                   What started as curiosity about how things work on the web evolved into a deep love for building applications that make a difference.
                 </motion.p>
                 

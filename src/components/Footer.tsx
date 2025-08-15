@@ -50,15 +50,16 @@ const Footer: React.FC = () => {
   ];
 
   const quickLinks = [
-    { name: 'Home', href: '#home' },
+     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', href: '#contact' },
   ];
 
-  const scrollToSection = (href: string) => {
+   const scrollToSection = (href: string) => {
+    console.log(`Scrolling to ${href}`);
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -158,8 +159,9 @@ const Footer: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <button
+                    type="button"
                     onClick={() => scrollToSection(link.href)}
-                    className="text-gray-300 hover:text-accent-purple transition-colors duration-200 text-base hover:translate-x-1 transform transition-transform duration-200"
+                    className="text-gray-300 cursor-pointer hover:text-accent-purple text-base px-2 py-1 rounded transition duration-200 focus:outline-none focus:ring-2 focus:ring-accent-purple focus:ring-offset-2"
                   >
                     {link.name}
                   </button>
@@ -217,11 +219,11 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 pointer-events-none opacity-5">
         <div className="absolute inset-0 grid-background"></div>
       </div>
     </footer>
   );
 };
 
-export default Footer; 
+export default Footer;
